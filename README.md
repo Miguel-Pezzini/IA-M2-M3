@@ -1,6 +1,6 @@
 # Grupo D — Exportações de Itajaí e contêineres
 
-Trabalho das entregas M2.1 (proposta) e M2.2 (análise exploratória). A pergunta é se, para um mês X, o peso das exportações marítimas declaradas em Itajaí no mês anterior ajuda a prever quantos contêineres cheios saem do Complexo de Itajaí em X, melhor do que supor que X repete o volume de X−1.
+Trabalho das entregas M2.1 (proposta) e M2.2 (análise exploratória). A pergunta é quanto da oscilação mensal do número de contêineres cheios embarcados no Complexo de Itajaí pode ser antecipada com as exportações marítimas já declaradas em Itajaí. Como método, para um mês X, usa-se só o que existe até X−1 (contêineres e peso líquido exportado) e compara-se o erro com a regra de supor que X repete o volume de X−1.
 
 Nesta entrega não há modelo treinado. A comparação de erro fica para a M3. Os meses reservados para esse teste são 2025-02, 2025-03, 2025-04, 2025-05, 2025-06 e 2026-02. Eles continuam nos gráficos. Nenhum filtro foi mudado por causa deles.
 
@@ -32,7 +32,9 @@ O notebook lê estes caminhos:
 - `dados/EXP_2023.csv` a `dados/EXP_2026.csv`
 - `dados/dicionarios/URF.csv` e `VIA.csv`
 
-Os txt da ANTAQ e os `EXP_*.csv` ficam fora do Git. Vários passam de 100 MB, e o GitHub recusa o push. Continuam na pasta local e estão no `.gitignore`. Os dicionários estão no repositório.
+Os dados estão no repositório, com uma exceção: o GitHub recusa arquivos acima de 100 MB. Por isso `{ano}Carga.txt` de 2023, 2024 e 2025 (405 a 453 MB) e `EXP_2023.csv` a `EXP_2025.csv` (104 a 114 MB) entram **zipados**, ao lado do original: `dados/antaq/{ano}/{ano}Carga.zip` e `dados/EXP_{ano}.zip`.
+
+Depois de clonar, extraia cada zip na própria pasta, para que o notebook encontre `{ano}Carga.txt` e `EXP_{ano}.csv`. Os arquivos extraídos estão no `.gitignore` e não são versionados. Os demais arquivos (Atracação, `2026Carga.txt`, `EXP_2026.csv`) e os dicionários seguem em texto.
 
 Nos arquivos de ANTAQ, 2023 e 2024 têm os doze meses, 2025 vai de janeiro a junho e 2026 tem janeiro e fevereiro. Isso descreve esses arquivos, não o calendário publicado pela agência. Mês ausente no arquivo não foi preenchido com zero.
 
