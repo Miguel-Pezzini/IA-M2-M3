@@ -1,3 +1,11 @@
-# Dados brutos: vários arquivos passam de 100 MB e o GitHub recusa o push.
-dados/antaq/
-dados/EXP_*.csv
+# Estes arquivos passam de 100 MB, e o GitHub recusa o push. Eles entram no
+# repositorio zipados (ver o README); a versao extraida fica so na maquina de cada um.
+dados/antaq/2023/2023Carga.txt
+dados/antaq/2024/2024Carga.txt
+dados/antaq/2025/2025Carga.txt
+dados/EXP_2023.csv
+dados/EXP_2024.csv
+dados/EXP_2025.csv
+
+# Arquivo de trava do Word (existe enquanto o .docx esta aberto)
+~$*
