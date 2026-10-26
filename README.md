@@ -1,6 +1,6 @@
 # Grupo D — Exportações de Itajaí e contêineres
 
-Trabalho das entregas M2.1 (proposta) e M2.2 (análise exploratória). A pergunta é quanto da oscilação mensal do número de contêineres cheios embarcados no Complexo de Itajaí pode ser antecipada com as exportações marítimas já declaradas em Itajaí. Como método, para um mês X, usa-se só o que existe até X−1 (contêineres e peso líquido exportado) e compara-se o erro com a regra de supor que X repete o volume de X−1.
+Trabalho das entregas M2.1 (proposta) e M2.2 (análise exploratória). A pergunta é quanto da oscilação mensal do número de contêineres cheios embarcados no Complexo de Itajaí pode ser antecipada com as exportações marítimas já declaradas em Itajaí. A tarefa é prever os contêineres cheios de um mês X usando só dados até X−1 (contêineres e peso líquido de X−1). Na M3, compara-se a regra “X repete os contêineres de X−1” com o peso líquido de X−1.
 
 Nesta entrega não há modelo treinado. A comparação de erro fica para a M3. Os meses reservados para esse teste são 2025-02, 2025-03, 2025-04, 2025-05, 2025-06 e 2026-02. Eles continuam nos gráficos. Nenhum filtro foi mudado por causa deles.
 
