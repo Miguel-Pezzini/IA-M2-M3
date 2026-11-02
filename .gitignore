@@ -9,3 +9,6 @@ dados/EXP_2025.csv
 
 # Arquivo de trava do Word (existe enquanto o .docx esta aberto)
 ~$*
+
+# Ambiente virtual Python (cada um cria o seu com requirements.txt; ver o README)
+.venv/
