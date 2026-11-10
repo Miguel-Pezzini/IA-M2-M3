@@ -1,8 +1,14 @@
 # Estes arquivos passam de 100 MB, e o GitHub recusa o push. Eles entram no
 # repositorio zipados (ver o README); a versao extraida fica so na maquina de cada um.
+dados/antaq/2020/2020Carga.txt
+dados/antaq/2021/2021Carga.txt
+dados/antaq/2022/2022Carga.txt
 dados/antaq/2023/2023Carga.txt
 dados/antaq/2024/2024Carga.txt
 dados/antaq/2025/2025Carga.txt
+dados/EXP_2020.csv
+dados/EXP_2021.csv
+dados/EXP_2022.csv
 dados/EXP_2023.csv
 dados/EXP_2024.csv
 dados/EXP_2025.csv
